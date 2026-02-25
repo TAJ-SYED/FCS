@@ -162,6 +162,8 @@ section {
 
 .card img {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 20px;
 }
@@ -201,6 +203,11 @@ footer {
   padding: 40px;
   opacity: 0.5;
 }
+
+.featured {
+  grid-column: span 2;
+}
+
 </style>
 </head>
 <body>
@@ -234,7 +241,7 @@ footer {
       <p>Official Discord server, development updates, early access testing, and support channels.</p>
     </div>
 
-    <div class="card">
+    <div class="card featured">
       <img src="driftfight.png">
       <h3>Drift Fight</h3>
       <p>Competitive Roblox drift racing with laser weapons, gadgets, and chaotic multiplayer combat mechanics.</p>
