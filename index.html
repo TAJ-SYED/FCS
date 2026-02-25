@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frost Core</title>
+
+<!-- Open Graph Embed -->
+<meta property="og:title" content="Frost Core — Elite Game Infrastructure">
+<meta property="og:description" content="High-performance game hosting, multiplayer systems, and next-gen backend infrastructure.">
+<meta property="og:image" content="https://taj-syed.github.io/frostcore/frostcore.png">
+<meta property="og:url" content="https://taj-syed.github.io/frostcore/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#38b6ff">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
@@ -40,12 +49,23 @@ nav {
   padding: 20px 8%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   backdrop-filter: blur(10px);
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.4);
   z-index: 1000;
 }
 
-nav h1 {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo h1 {
   color: var(--primary);
   font-weight: 800;
 }
@@ -160,6 +180,11 @@ section {
   border-radius: 20px;
 }
 
+.discord-section {
+  text-align: center;
+  padding: 120px 8%;
+}
+
 footer {
   text-align: center;
   padding: 40px;
@@ -170,11 +195,15 @@ footer {
 <body>
 
 <nav>
-  <h1>Frost Core</h1>
+  <div class="logo">
+    <img src="frostcore.png" alt="Frost Core Logo">
+    <h1>Frost Core</h1>
+  </div>
   <div>
     <a href="#projects">Projects</a>
     <a href="#status">Status</a>
     <a href="#founder">Founder</a>
+    <a href="#discord">Discord</a>
   </div>
 </nav>
 
@@ -222,11 +251,20 @@ footer {
     <div>
       <h3>Mattman</h3>
       <p style="opacity:0.7;">
-        Founder & Lead Architect.  
-        Focused on building scalable backend systems and next-gen multiplayer frameworks.
+        Founder & Lead Architect. Focused on building scalable backend systems and next-gen multiplayer frameworks.
       </p>
     </div>
   </div>
+</section>
+
+<section id="discord" class="discord-section">
+  <h2 class="section-title">Join the Frost Core Community</h2>
+  <p style="opacity:0.7; margin:20px 0 40px;">
+    Connect with developers, testers, and early access members.
+  </p>
+  <a href="https://discord.gg/YOURINVITELINK" target="_blank">
+    <button>Join Our Discord</button>
+  </a>
 </section>
 
 <footer>
