@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frost Core</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #38b6ff;
+  --dark: #0a0f14;
+  --light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--dark);
+  color: var(--light);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10,15,20,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav h1 {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  background: linear-gradient(to bottom right, #0a0f14, #111b24);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  color: var(--primary);
+}
+
+.hero-text p {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 28px;
+  background: var(--primary);
+  border: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+section {
+  padding: 100px 8%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #111b24;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(56,182,255,0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.founder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.founder img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #0a0f14;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>Frost Core</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#founder">Founder</a>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-text">
+    <h2>Powering <span>Next-Gen</span> Game Infrastructure</h2>
+    <p>Frost Core builds and hosts high-performance game servers and advanced multiplayer services engineered for competitive and large-scale online experiences.</p>
+    <button onclick="location.href='#projects'">Explore Our Projects</button>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Frost Core</h2>
+  <p style="max-width:700px; opacity:0.7;">
+    We specialize in scalable game hosting solutions, backend infrastructure, and real-time service systems.
+    Our mission is to empower developers with powerful, reliable, and optimized gaming environments.
+  </p>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Current Projects</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="YOUR_FROSTCORE_LOGO.png">
+      <h3>Frost Core Discord</h3>
+      <p>Community-driven development hub, support channels, and early access releases.</p>
+    </div>
+
+    <div class="card">
+      <img src="YOUR_DRIFT_FIGHT_IMAGE.png">
+      <h3>Drift Fight</h3>
+      <p>A high-speed Roblox racing experience where players drift across maps while using laser weapons and gadgets to dominate the leaderboard.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="founder">
+  <h2 class="section-title">Founder</h2>
+  <div class="founder">
+    <img src="YOUR_MATTMAN_LOGO.png">
+    <div>
+      <h3>Mattman</h3>
+      <p style="opacity:0.7;">
+        Founder & Lead Architect of Frost Core.
+        Focused on building scalable gaming infrastructure and innovative multiplayer systems.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Frost Core — Built for Performance
+</footer>
+
+</body>
+</html>
