@@ -8,8 +8,8 @@
 <!-- Open Graph Embed -->
 <meta property="og:title" content="Frost Core — Elite Game Infrastructure">
 <meta property="og:description" content="High-performance game hosting, multiplayer systems, and next-gen backend infrastructure.">
-<meta property="og:image" content="https://taj-syed.github.io/frostcore/frostcore.png">
-<meta property="og:url" content="https://taj-syed.github.io/frostcore/">
+<meta property="og:image" content="https://taj-syed.github.io/FCS/frostcore.png">
+<meta property="og:url" content="https://taj-syed.github.io/FCS/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#38b6ff">
 
@@ -62,7 +62,18 @@ nav {
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid rgba(56,182,255,0.6);
+  box-shadow: 0 0 25px rgba(56,182,255,0.4);
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(56,182,255,0.6);
 }
 
 .logo h1 {
@@ -197,7 +208,6 @@ footer {
 <nav>
   <div class="logo">
     <img src="frostcore.png" alt="Frost Core Logo">
-    <h1>Frost Core</h1>
   </div>
   <div>
     <a href="#projects">Projects</a>
